@@ -13,6 +13,7 @@ height: 450px;
 margin: 0 auto;
 }
 </style>
+ 
   <title>Vishal's Personal Portfolio</title>
 
   <!--
@@ -20,10 +21,21 @@ margin: 0 auto;
   -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
+					 
+							  
+																	   
+			
+																		 
+						  
+  
+
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/try.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">												 
+																						
 
   <!--
     - google font link
@@ -32,6 +44,9 @@ margin: 0 auto;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script src="./assets/js/acctoolbar.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/try.js"></script>																					  
+											
   <script>
 // optional init
   window.onload = function() {
@@ -43,6 +58,24 @@ margin: 0 auto;
     });
   }
 </script>
+<!-- Adding scripts to use bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity=
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous">
+	</script>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity=
+"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous">
+	</script>
+	<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity=
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous">
+	</script>
 	 <!--<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
@@ -50,6 +83,7 @@ margin: 0 auto;
   agent-id="f1f4d9af-9dba-4383-ba6e-8297011a1881"
   language-code="en"
 ></df-messenger>-->
+		  
 </head>
 
 <body>
@@ -73,7 +107,7 @@ margin: 0 auto;
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Vishal Ganatra</h1>
+          <h1 class="name" title="Vishalkumar Ganatra">Vishal Ganatra</h1>
 
           <p class="title">Deputy Manager(IT)</p>
         </div>
@@ -175,6 +209,7 @@ margin: 0 auto;
         </ul>
 
       </div>
+   
 	    <model-viewer src="https://api.readyplayer.me/v1/avatars/63b5a87e6b5c5b3acae7208a.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
 		<div class="progress-bar hide" slot="progress-bar">
 			<div class="update-bar"></div>
@@ -248,12 +283,19 @@ margin: 0 auto;
 
         <section class="about-text">
           <p>Project Manager with 10+ years of incessant experience on IT Infrastructure and its Integration for various platforms of e-Governance MMPs. Interested to perform vital role in facilitating IT policy formulation and implementation</p>
+	   
 	  <p>Independently Mentoring Startup and Innovators for connected presence on Startup Gujarat Portal</p>
+	   
 	  <p>Independently applying project management methodologies in handling the ICTD projects</p>
+	   
 	  <p>ICT Awareness Consultant: Public Privacy and Human rights in Cyber regime</p>
+	   
 	  <p>E-Governance Demand Side Initiator – Involved in Proactive Measures</p>
+	   
 	  <p>Familier with Scrum Fundamentals and Six Sigma White Belt</p>
+	   
 	  <p>Technical adviser to District e-Governance Society</p>
+	   
           <p>ITIL Foundation Certified and PRINCE2 Practitioner</p>
 	  
 	</section>
@@ -940,7 +982,7 @@ United Nations Public Administration Network
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Anubandham Portal</button>
             </li>
 
             <li class="filter-item">
@@ -948,7 +990,7 @@ United Nations Public Administration Network
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Startup Gujarat Portal</button>
             </li>
 
           </ul>
@@ -972,7 +1014,7 @@ United Nations Public Administration Network
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Anubandham Portal</button>
               </li>
 
               <li class="select-item">
@@ -980,7 +1022,7 @@ United Nations Public Administration Network
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Startup Gujarat Portal</button>
               </li>
 
             </ul>
@@ -994,20 +1036,96 @@ United Nations Public Administration Network
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-outline" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></ion-icon>
+					 
+										 
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1-ep-1.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Episode 1</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Startup Gujarat Portal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+<!-- Button to launch a modal -->
+
+	<!-- Modal -->
+	<div class="modal fade"
+		id="exampleModal"
+		tabindex="-1"
+		role="dialog"
+		aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		
+		<div class="modal-dialog" role="document" style="margin-top:283px">
+			<div class="modal-content">
+			
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<div id="app-cover">
+  <div id="bg-artwork"></div>
+  <div id="bg-layer"></div>
+  <div id="player">
+    <div id="player-track">
+      <div id="album-name"></div>
+      <div id="track-name"></div>
+      <div id="track-time">
+        <div id="current-time"></div>
+        <div id="track-length"></div>
+      </div>
+      <div id="s-area">
+        <div id="ins-time"></div>
+        <div id="s-hover"></div>
+        <div id="seek-bar"></div>
+      </div>
+    </div>
+    <div id="player-content">
+      <div id="album-art">
+        <img src="./assets/images/covervishal.png" class="active" id="_1">
+        <img src="./assets/images/2.png" id="_2">
+        <img src="./assets/images/3.png" id="_3">
+        <img src="./assets/images/4.png" id="_4">
+        <img src="./assets/images/5.png" id="_5">
+        <div id="buffer-box">Buffering ...</div>
+      </div>
+      <div id="player-controls">
+        <div class="control">
+          <div class="button" id="play-previous">
+            <i class="fas fa-backward"></i>
+          </div>
+        </div>
+        <div class="control">
+          <div class="button" id="play-pause-button">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="control">
+          <div class="button" id="play-next">
+            <i class="fas fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button"
+						class="btn btn-secondary"
+						data-dismiss="modal">
+						Close
+				</button>
+				</div>
+			</div>
+		</div>
+	</div>
+									
+            <li class="project-item  active" data-filter-item data-category="startup gujarat portal">
               <a href="#">
 
                 <figure class="project-img">
@@ -1015,17 +1133,17 @@ United Nations Public Administration Network
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project-1-ep-2.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Episode 2</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Startup Gujarat Portal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="anubandham portal">
               <a href="#">
 
                 <figure class="project-img">
@@ -1033,12 +1151,12 @@ United Nations Public Administration Network
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project-2-ep-1.png" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Episode 1</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Anubandham Portal</p>
 
               </a>
             </li>
@@ -1061,7 +1179,7 @@ United Nations Public Administration Network
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="anubandham portal">
               <a href="#">
 
                 <figure class="project-img">
@@ -1069,17 +1187,17 @@ United Nations Public Administration Network
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/project-2-ep-2.png" alt="dsm." loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Episode 2</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Anubandham Portal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="anubandham portal">
               <a href="#">
 
                 <figure class="project-img">
@@ -1090,14 +1208,14 @@ United Nations Public Administration Network
                   <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Episode 3</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Anubandham Portal</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="startup gujarat portal">
               <a href="#">
 
                 <figure class="project-img">
@@ -1105,12 +1223,12 @@ United Nations Public Administration Network
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/project-1-ep-3.png" alt="summary" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">Episode 3</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Startup Gujarat Portal</p>
 
               </a>
             </li>
@@ -1133,7 +1251,7 @@ United Nations Public Administration Network
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="startup gujarat portal">
               <a href="#">
 
                 <figure class="project-img">
@@ -1141,12 +1259,12 @@ United Nations Public Administration Network
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                  <img src="./assets/images/project-1-ep-4.png" alt="arrival" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Arrival</h3>
+                <h3 class="project-title">Episode 4</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Startup Gujarat Portal</p>
 
               </a>
             </li>
