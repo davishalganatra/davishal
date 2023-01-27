@@ -8,6 +8,17 @@ body {
   background-color: #ffeff5;
 }
 
+#modal fade show {
+ background-image: url(./assets/images/covervishal.png);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+ background-color: white;
+ height: 100%;
+ width: 100%;
+}
+
 #app-cover {
   position: absolute;
   top: 50%;
